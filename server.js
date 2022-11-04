@@ -25,3 +25,12 @@ const performAction = async (action) => {
             break;
     }
 }
+
+const init = async () => {
+    while (action != "Exit") {
+        action = (await prompt(Questions.mainAction)).action;
+        await performAction(action);
+    }
+}
+
+init();
