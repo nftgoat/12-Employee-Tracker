@@ -3,14 +3,14 @@ const inquirer = require('inquirer');
 const mysql = require('mysql2');
 
 
-import inquirer from "inquirer";
-import index from "./lib/index.js"
-import Questions from "./lib/questions.js";
-import CONFIG from "./config.js"
-import { filters, joins, parseChanges } from "./lib/indexHelper.js";
+// import inquirer from "inquirer";
+// import index from "./lib/index.js"
+// import Questions from "./lib/questions.js";
+// import CONFIG from "./config.js"
+// import { filters, joins, parseChanges } from "./lib/indexHelper.js";
 
 const prompt = inquirer.prompt;
-const sql = new index(CONFIG.SQL);
+// const sql = new index(CONFIG.SQL);
 
 const db = mysql.createConnection(
     {
@@ -86,7 +86,7 @@ const performAction = async (action) => {
 
 const init = async () => {
     while (action != "Exit") {
-        action = (await prompt(Questions.mainAction)).action;
+        // action = (await prompt(Questions.mainAction)).action;
         await performAction(action);
     }
 }
