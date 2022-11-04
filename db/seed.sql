@@ -28,3 +28,11 @@ VALUES
 ("Kate", "Upton", 3, null),
 ("Jennifer", "Lopez", 4, null),
 
+("Alice", "Armstrong", 5, 1),
+("Bob", "Barker", 5, 1),
+("Chloe", "Clinton", 6, 2),
+("Don", "Davidson", 6, 2),
+("Ed", "Eckerson", 7, 3),
+("Frank", "Fitzwater", 7, 3),
+("Geroge", "Geoth", 8, 4),
+("Harry", "Hayes", 8, 4);
