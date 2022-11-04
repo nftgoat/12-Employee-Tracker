@@ -11,3 +11,17 @@ let action;
 let id;
 let newDepartment, newRole, newEmployee;
 let updateInfo;
+
+//identify chosen user action
+const performAction = async (action) => {
+    switch (action) {
+
+        case
+        id
+        sql.displayTable
+        break;
+
+        default:
+            break;
+    }
+}
