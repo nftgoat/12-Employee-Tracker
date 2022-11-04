@@ -1,3 +1,8 @@
+const cTable = require('console.table');
+const inquirer = require('inquirer');
+const mysql = require('mysql2');
+
+
 import inquirer from "inquirer";
 import index from "./lib/index.js"
 import Questions from "./lib/questions.js";
@@ -6,6 +11,16 @@ import { filters, joins, parseChanges } from "./lib/indexHelper.js";
 
 const prompt = inquirer.prompt;
 const sql = new index(CONFIG.SQL);
+
+const db = mysql.createConnection(
+    {
+        host: 'localhost',
+        user: 'root',
+        password: 'rootroot',
+        database: 'employee_tracker'
+    },
+    console.log(`Connected to the employee_tracker database.`)
+);
 
 let action;
 let id;
